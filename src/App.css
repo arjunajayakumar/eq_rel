@@ -1,0 +1,279 @@
+.menuItems:hover svg path {
+  /* Specify the color you want to change to */
+  fill: #027A48 !important;
+}
+.menuItems:hover span{
+  color: #027A48;
+}
+.active .menuItems{
+  background-color: #EAECF0;
+}
+.active .menuItems span{
+  color: #027A48;
+}
+.active .menuItems svg path {
+  /* Specify the color you want to change to */
+  fill: #027A48 !important;
+}
+/* CSS Main Layout */
+.routerLayout {
+  height: calc(100vh - 8rem);
+}
+
+/* Input Type Number */
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+
+/* CSS Calender picker UI */
+.calender-box .MuiStack-root {
+  height: 36px;
+  padding-top: 0 !important;
+  overflow: hidden;
+}
+.calender-box .MuiTextField-root{
+  width: 100% !important;
+  min-width:100% !important;
+}
+.calender-box.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  display: none;
+}
+.calender-box .MuiInputBase-root:hover,
+.calender-box .MuiInputBase-root:focus {
+  border: none !important;
+}
+.calender-box .MuiInputBase-root input::placeholder,
+.calender-box dYrfwz > input::placeholder {
+  font-size: 12px !important;
+  color: #bfbfbf !important;
+}
+.calender-box .MuiInputBase-input {
+  height: 36px !important;
+  padding: 0 0.5rem !important;
+  font-size: 12px !important;
+  color: #344054 !important;
+}
+.calender-box .Mui-focused {
+  outline: none !important;
+  color: #bfbfbf !important;
+  border: none !important;
+}
+.calender-box  .MuiOutlinedInput-notchedOutline, .calender-box .MuiOutlinedInput-notchedOutline{
+border-color:#D9D9D9 !important;
+border-width: » 1px;
+}
+.calender-box .MuiInputBase-root:hover
+.Mui0utlinedInput-notchedOutline {
+border: 1px solid #D9D9D9 !important;
+}
+
+.calender-box .MuiOutlinedInput-notchedOutline:hover, .calender-box .MuiOutlinedInput-notchedOutline:focus {
+  border: 1px solid #D9D9D9 !important;
+}
+.calender-box .MuiOutlinedInput-notchedOutline, .calender-box .MuiOutlinedInput-notchedOutline {
+  border-color: #D9D9D9 !important;
+  border-width: 1px !important;
+}
+.calender-box .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #21BD7A !important;
+}
+.calender-box .MuiInputAdornment-root .MuiIconButton-root{
+  background: #F8F8F8 !important;
+  border-radius: 4px !important;
+  width: 41px;
+  height: 32px;
+}
+.calender-box .Mui-focused .MuiInputAdornment-root .MuiIconButton-root{
+  background: #21BD7A !important;
+}
+.calender-box .MuiInputAdornment-root .MuiSvgIcon-root{
+  fill: #B1B1B1 !important;
+}
+.calender-box .Mui-focused .MuiInputAdornment-root .MuiSvgIcon-root {
+  fill: #FFFFFF !important;
+}
+.MuiPickersDay-root.Mui-selected{
+  border-radius: 4px !important;
+  background-color: #21BD7A !important;
+}
+.MuiPickersDay-today {
+  border-radius: 4px !important;
+  border-color:#21BD7A !important;
+}
+.MuiPickersYear-root .MuiPickersYear-yearButton.Mui-selected {
+  color: #fff !important;
+  background-color: #20bd7b !important;
+  border-radius: 4px !important;
+  width: 40px !important;
+  font-size: 14px !important;
+  margin: 4px 0 !important;
+}
+.MuiPickersYear-root .MuiPickersYear-yearButton{
+  width: 40px !important;
+  font-size: 14px !important;
+  margin: 4px 0 !important;
+  color: #7E7E7E !important;
+}
+/* Autocomplete CSS */
+.auto-complete-box .wrapper {
+  border-radius: 4px !important;
+  color: #344054 !important;
+  font-size: 12px !important;
+  font-family: inherit !important;
+  border: 1px solid #D9D9D9;
+  z-index: 1 !important;
+}
+
+.auto-complete-box .wrapper:active,
+.auto-complete-box .wrapper:hover,
+.auto-complete-box .wrapper:focus-within {
+  box-shadow: none !important;
+}
+.auto-complete-box .wrapper .sc-fqkvVR, .auto-complete-box {
+  min-height: 36px !important;
+  height: 36px !important;
+}
+.auto-complete-box .wrapper svg {
+  display: none;
+}
+
+.auto-complete-box .wrapper div input {
+  padding: 0px 0.5rem !important;
+  background-color: transparent !important;
+  color: #344054 !important;
+}
+.auto-complete-box .wrapper .sc-fqkvVR input::placeholder{
+  color: #BFBFBF !important;
+}
+
+
+/* Hide the default checkbox */
+.custom-checkbox {
+  display: none;
+}
+
+/* Style the label to create a custom checkbox */
+.custom-checkbox + label {
+  position: relative;
+  padding-left: 15px; /* Adjust the spacing as needed */
+  cursor: pointer;
+}
+
+/* Create the checkbox shape */
+.custom-checkbox + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #98A2B3;
+  border-radius: 2px;
+}
+
+/* Style the checkbox when it's checked */
+.custom-checkbox:checked + label:before {
+  background-color: #20bd7b; 
+  border:1px solid #fff;
+  border-radius: 3px;
+}
+
+/* Style the label text */
+.custom-checkbox + label:after {
+  content: "";
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    width: 6px;
+    height: 3px;
+    border: solid #fff;
+    border-width: 1px 1px 0px 0px;
+    transform: rotate(130deg);
+  display: none;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox:checked + label:after {
+  display: block;
+}
+
+/* Table CSS */
+
+.table-layout{
+  height: calc(100vh - 18rem);
+}
+.customer-details .table-layout {
+  height: calc(100vh - 24.5rem);}
+
+  /* Toast Box */
+  .Toastify__toast{
+    padding: 24px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    width: 284px !important;
+  }
+  .Toastify__toast-theme--colored.Toastify__toast--error{
+    color: #DF3B6C !important;
+    background:#fff !important;
+  }
+  .Toastify__toast-icon.Toastify--animate-icon {
+   display: none !important;
+  }
+  .Toastify__close-button > svg {
+      fill: #D9D9D9 !important;
+      height: 20px !important;
+      width: 20px !important;
+      position: relative;
+      top: 8px;
+      right: -4px;
+  }
+  .Toastify__toast-theme--colored.Toastify__toast--success{
+    color: #21BD7A !important;
+    background:#fff !important;
+  }
+  .onestep-input-phone input{
+    padding-left: 50px !important;
+  }
+
+  /* Model Box */
+  .ReactModal__Content:focus-visible{
+    outline: none !important;
+  }
+
+  /* Select Dropdown CSS */
+  select {
+    background-image: none;
+    cursor: pointer;
+    position: relative;
+    top: -8px;
+    width: 111%;
+    height: 33px;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Arrow */
+  .select::after {
+    content: url('../src/assets/images/svg/selectDropdown_icon.svg');
+    position: absolute;
+    top: -6px;
+    right: 2px;
+    background-color: #F8F8F8;
+    transition: .25s all ease;
+    pointer-events: none;
+    border-radius: 4px;
+    padding: 3px 12px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  select option:disabled {
+    color: #98A2B3; /* Custom disabled text color */
+    font-size: 12px; /* Custom disabled font size */
+  }
